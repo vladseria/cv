@@ -176,8 +176,20 @@
             height: 100%;
             object-fit: cover;
             z-index: 1;
+            border-radius: 16px;
         }
         
+        .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(0, 210, 255, 0.2), transparent 70%);
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 16px;
+}   
         .photo-placeholder {
             position: absolute;
             top: 0;
@@ -817,7 +829,7 @@
             </div>
             
           <div class="header-photo glass-card">
-    <img src="profile.jpg" alt="Vlad-Gabriel Popirda" class="profile-image">
+    <img src="profile.png" alt="Vlad-Gabriel Popirda" class="profile-image">
     <div class="image-overlay"></div>
 </div>
             
